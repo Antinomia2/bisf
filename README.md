@@ -163,7 +163,7 @@ The same backtest is generated for all six ETFs. In the implemented sample, Buy 
 
 ### Portfolio Analysis
 
-The notebook constructs mean-variance portfolios over the first 108 months of data using daily `Close` prices. Returns and covariance are annualized with 252 trading days. The portfolio universe is the six ETFs only; `^GSPC` and `ff3.csv` are excluded.
+The notebook constructs mean-variance portfolios over the first 108 months of data using daily `Close` prices.
 
 Two approaches are implemented:
 
@@ -208,9 +208,6 @@ The beta of the Markowitz maximum-Sharpe portfolio against the S&P 500 is `1.191
 - SciPy (`scipy.stats`, `scipy.optimize.minimize`)
 - Statsmodels (`ARIMA`, OLS regression)
 - yfinance
-- IPython display utilities
-
-No `requirements.txt` or environment file is included in the repository.
 
 ## Results Summary
 
@@ -227,15 +224,8 @@ No `requirements.txt` or environment file is included in the repository.
 
 ```text
 .
-|-- README.md
-|-- LICENSE
 |-- Project Brief.pdf
 |-- Presentation BISF.pdf
-|-- relazioneHuadongLiao886110.pdf
-|-- graphs/
-|   |-- 01_adjusted_close_prices_sector_etfs.png
-|   |-- ...
-|   |-- 27_markowitz_efficient_frontier_first_108_months.png
 |-- main/
 |   |-- bisf.ipynb
 |   |-- data/
@@ -248,5 +238,3 @@ No `requirements.txt` or environment file is included in the repository.
 |       |-- ^GSPC_daily.csv
 |       |-- ff3.csv
 ```
-
-`main/bisf.ipynb` is the implemented analysis notebook. No standalone Python script files are present in the project folder.
